@@ -26,6 +26,34 @@ To write a Python program to create a class `Student` with the private members `
 ### PROGRAM
 
 ```
+class Student:
+    def __init__(self, name, age):
+        self.__name = name      # private variable
+        self.__age = age        # private variable
+
+    # Getter method for name
+    def get_name(self):
+        return self.__name
+
+    # Getter method for age
+    def get_age(self):
+        return self.__age
+
+    # Setter method for age
+    def set_age(self, age):
+        self.__age = age
+
+# Create an object of Student
+stu = Student("Jessa", 14)
+
+# Display initial details
+print("Name:", stu.get_name(), stu.get_age())
+
+# Update age using setter
+stu.set_age(16)
+
+# Display updated details
+print("Name:", stu.get_name(), stu.get_age())
 
 
 
@@ -33,7 +61,10 @@ To write a Python program to create a class `Student` with the private members `
 
 ### OUTPUT
 
+<img width="967" height="288" alt="Screenshot 2025-08-27 144753" src="https://github.com/user-attachments/assets/372837bb-bb6f-4247-b54f-b6b34274faf7" />
 
 ### RESULT
+Thus the Python program to create a class `Student` with the private members `name` and `age`, and add getter and setter methods to initialize and modify the `age` variable is created and executed.
+
 
 
